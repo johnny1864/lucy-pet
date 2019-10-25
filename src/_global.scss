@@ -1,0 +1,187 @@
+$blue: #0093d1;
+$orange: #ffa500;
+$white: #fff;
+$dgrey: #262626;
+$grey: #f4f4f4;
+$lblue: #12bcbc;
+
+section.pdm {
+	padding: 3rem 1.5rem;
+	font-size: 14px;
+	@media only screen and (min-width:720px){
+		font-size: 15px;
+	}
+	@media only screen and (min-width:960px){
+		font-size: 16px;
+	}
+	@media only screen and (min-width: 960px) {
+		padding: 3rem 6rem;
+	}
+	&.color {
+		padding: 6rem 1.5rem;
+		@media only screen and (min-width: 960px) {
+			padding: 9rem 6rem;
+		}
+	}
+	&:not(.color) + .color {
+		margin-top: 1.5rem;
+		@media only screen and (min-width: 960px) {
+			margin-top: 3rem;
+		}
+	}
+	&.color + section:not(.color) {
+		margin-top: 1.5rem;
+		@media only screen and (min-width: 960px) {
+			margin-top: 3rem;
+		}
+	}
+	.container {
+		max-width: 625px;
+		width: 100%;
+		margin: 0 auto;
+        overflow: visible;
+		 @media only screen and (min-width: 960px) {
+			max-width: 1400px;
+		}
+	}
+}
+
+.page-template-flexible-content{
+    
+    main#main{
+        padding: 0 !important;
+        
+        .fusion-row{
+            max-width: unset;
+        }
+    }
+    
+    .avada-page-titlebar-wrapper{
+        display: none;
+    }
+	
+	section.pdm{
+		box-sizing: border-box;
+		*{
+			box-sizing: border-box;
+		}
+	}
+	
+	h1, .heading1,
+	h2, .heading2,
+	h3, .heading3,
+	h4, .heading4,
+	h5, .heading5,
+	h6, .heading6
+	{
+		font-weight: 700;
+		line-height: 1.25;
+		margin-bottom: .5em;
+	}
+
+	h2, .heading2{
+		font-size: 2.25em;
+        color: $blue;
+        text-transform: uppercase;
+	}
+
+	.btn {
+		display: inline-block;
+		background-color: $orange;
+		color: $white;
+		padding: 1em 2.5em;
+		font-weight: bold;
+		&:hover{
+			color: $white;
+		}
+		&.outline{
+			background-color: transparent;
+			border: 1px solid $orange;
+			color: white;
+//			&:hover{
+//				color: white;
+//				background-color: $orange;
+//			}
+		}
+	}
+
+
+	p,li,a{
+		font-size: 1em;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+
+	img{
+		width: 100%;
+	}
+
+	.pdm {
+		padding: 3rem 1.5rem;
+
+		font-size: 14px;
+		@media only screen and (min-width:720px){
+			font-size: 15px;
+		}
+		@media only screen and (min-width:960px){
+			font-size: 16px;
+		}
+
+		@media only screen and (min-width: 960px) {
+			padding: 3rem 6rem;
+		}
+
+		&.color {
+			padding: 6rem 1.5rem;
+
+			@media only screen and (min-width: 960px) {
+				padding: 9rem 6rem;
+			}
+		}
+
+		&:not(.color) + .color {
+			margin-top: 1.5rem;
+
+			@media only screen and (min-width: 960px) {
+				margin-top: 3rem;
+			}
+		}
+
+		&.color + section:not(.color) {
+			margin-top: 1.5rem;
+
+			@media only screen and (min-width: 960px) {
+				margin-top: 3rem;
+			}
+		}
+
+		.container {
+			max-width: 625px;
+			width: 100%;
+			margin: 0 auto;
+            overflow: visible;
+
+			 @media only screen and (min-width: 960px) {
+				max-width: 1400px;
+			}
+		}
+	}
+
+	.text-orange{
+		color: $orange;
+	}
+
+	.title{
+		font-weight: bold;
+	}
+
+	.bg-orange{
+		background-color: $orange;
+	}
+
+	.grid{
+		display: grid;
+	}
+}

@@ -1,0 +1,52 @@
+section.pdm.icon-blocks {
+    .container {
+        .blocks {
+            figure {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .block {
+                margin-bottom: 1.5rem;
+                background-color: $grey;
+                text-align: center;
+
+                p {
+                    font-weight: bold;
+                }
+
+                p.title {
+                    color: $blue;
+                    font-size: 1.5em;
+                }
+
+                .content {
+                    padding-bottom: 1em;
+                }
+            }
+
+            @media screen and (min-width: 960px) {
+                display: flex;
+                justify-content: space-between;
+
+                .block {
+                    width: calc(33% - 1.5rem);
+                    display: flex;
+                    flex-direction: column;
+                    padding: 3em;
+                    
+                    figure{
+                        max-width: 150px;
+                    }
+
+                    .content {
+                        margin-top: auto;
+                    }
+
+                }
+            }
+        }
+    }
+}
