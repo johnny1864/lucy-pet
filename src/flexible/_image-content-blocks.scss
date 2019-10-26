@@ -1,0 +1,45 @@
+section.pdm.image-content-blocks{
+	padding-bottom: 0;
+	.the-blocks{
+		.block{
+			.left{
+				padding: 3rem 1.5rem;
+				h3{
+					margin: 1em 0;
+                    color: $blue;
+				}
+                
+			}
+			.right{
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+	@media only screen and (min-width:960px){
+		text-align: center;
+		.the-blocks{
+			text-align: left;
+			margin-left: -3rem;
+			.block{
+				display: flex;
+				align-items: center;
+				.left,.right{
+					width: 50%;
+				}
+				&:nth-of-type(even){
+					flex-direction: row-reverse;
+				}
+				.left{
+					padding: 3rem;
+				}
+				.right{
+					img{
+						object-fit: cover;
+					}
+				}
+			}
+		}
+	}
+}
